@@ -28,9 +28,9 @@ export class WeatherService {
 
     	 return this.http.get(
          environment.baseUrl +
-         'weather?q='+ cityName +
-         '&appid='+ environment.appId +
-         '&units=' + environment.units
+         'q='+ cityName +
+         '&key='+ environment.appId +
+         '' + environment.units
          )
     	 .map(response => response.json())
     	 .catch(this.handleError);
@@ -38,14 +38,14 @@ export class WeatherService {
 
   getWeatherForecast(cityName): Observable<any[]>{
 
-     return this.http.get(environment.baseUrl +'forecast?q='+ cityName +'&appid='+ environment.appId +'&units=' + environment.units)
+     return this.http.get(environment.baseUrl +'q='+ cityName +'&key='+ environment.appId +'' + environment.units)
      .map(response => this.extractData(response))
      .catch(this.handleError);
   }
 
   private extractData(res: any) {
     let body = res.json();
-    return body.list || { };
+    return body;
   }
 
   private handleError (error: any) {

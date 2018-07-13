@@ -1,10 +1,25 @@
 <article >
+    <h3>Current Condition</h3>
+    <div >
+        <h2 style="text-transform: uppercase;"> {{ _weather.data.request[0].query }}</h2>
+        <h3 > {{ _weather.data.current_condition[0].weatherDesc[0].value }}</h3>
+        <p >Wind speed (meter/sec): {{ _weather.data.current_condition[0].windspeedKmph }}</p>
+        <span class="temperature">Temperature (celsius): {{ _weather.data.current_condition[0].temp_C }} </span>
+        <p class="temperature">Feels like Temperature (celsius): {{ _weather.data.current_condition[0].FeelsLikeC }}</p>
+        <p >Cloud Cover: {{ _weather.data.current_condition[0].cloudcover }}</p>
+        <p >Humidity (meter/sec): {{ _weather.data.current_condition[0].humidity }}</p>
+        <p >Observation time: {{ _weather.data.current_condition[0].observation_time }}</p>
+        <p >Pressure: {{ _weather.data.current_condition[0].pressure }}</p>
+        <p >Wind speed Miles: {{ _weather.data.current_condition[0].windspeedMiles }}</p>
+        <p > <img [src]="_weather.data.current_condition[0].weatherIconUrl[0].value"/></p>
+    </div>
+</article>
+<!--<article >
     <div >
         <h2 style="text-transform: uppercase;"> {{ weather.weather[0].main }}</h2>
         <h3 > {{ weather.weather[0].description }}</h3>
         <p >Wind speed (meter/sec): {{ weather.wind.speed }}</p>
         <span class="temperature">Temperature (celsius): {{ weather.main.temp }} </span>
         <p>{{ weather.dt_txt}}</p>
-        <a [routerLink]="['/detail-report']">Detail Report</a>
     </div>
-</article>
+</article>-->

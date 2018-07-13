@@ -12,5 +12,20 @@
                 {{disabledForecastButton}} 
                 {{cityName}}            
             </form>          
-            <weather-list [WeatherForecastList]="weatherForecastData"></weather-list> 
+            <article *ngIf="weatherForecastData !== undefined && weatherForecastData.data !== undefined">
+                    <h3>Current Condition</h3>
+                    <div >
+                        <h2 style="text-transform: uppercase;"> {{ weatherForecastData.data.request[0].query }}</h2>
+                        <h3 > {{ weatherForecastData.data.current_condition[0].weatherDesc[0].value }}</h3>
+                        <p >Wind speed (meter/sec): {{ weatherForecastData.data.current_condition[0].windspeedKmph }}</p>
+                        <span class="temperature">Temperature (celsius): {{ weatherForecastData.data.current_condition[0].temp_C }} </span>
+                        <p class="temperature">Feels like Temperature (celsius): {{ weatherForecastData.data.current_condition[0].FeelsLikeC }}</p>
+                        <p >Cloud Cover: {{ weatherForecastData.data.current_condition[0].cloudcover }}</p>
+                        <p >Humidity (meter/sec): {{ weatherForecastData.data.current_condition[0].humidity }}</p>
+                        <p >Observation time: {{ weatherForecastData.data.current_condition[0].observation_time }}</p>
+                        <p >Pressure: {{ weatherForecastData.data.current_condition[0].pressure }}</p>
+                        <p >Wind speed Miles: {{ weatherForecastData.data.current_condition[0].windspeedMiles }}</p>
+                        <p > <img [src]="weatherForecastData.data.current_condition[0].weatherIconUrl[0].value"/></p>
+                    </div>
+            </article>
 </section>

@@ -11,7 +11,7 @@ import { Weather } from './weather';
 export class WeatherSearchComponent implements OnInit {
 
     errorMessage: string;
-    weatherForecastData: any[];
+    weatherForecastData: any;
     disabledForecastButton: boolean = true;
     cityName:string;
 
@@ -23,36 +23,34 @@ export class WeatherSearchComponent implements OnInit {
     }
 
     onSubmit(cityName: string) {
-      console.log(cityName);
-/*    if (this.cityName == null){*/
         this._weatherService.getWeatherForecast(cityName)
-         .subscribe(data => {this.weatherForecastData = data}, 
-                    error =>  this.errorMessage = <any>error,            
+         .subscribe(data => {
+             this.weatherForecastData = data;
+            }, 
+        error =>  this.errorMessage = <any>error,            
      );
     }
-   //}
     
     
     onSearchLocation(cityName:string) {
      this.disabledForecastButton = false;
-     console.log(cityName);
     }
 
     onSubmitDatabinding() {
-      
-     console.log("inside the two way:"+ this.cityName);
-        this._weatherService.getWeatherForecast(this.cityName)
-         .subscribe(data => {this.weatherForecastData = data}, 
-                    error =>  this.errorMessage = <any>error,            
+    let vm = this;
+     console.log("inside the two way:"+ vm.cityName);
+        this._weatherService.getWeatherForecast(vm.cityName)
+         .subscribe(data => {
+             vm.weatherForecastData = data;
+             console.log(data);
+            }, 
+                    error =>  vm.errorMessage = <any>error,            
      );
-      this.onResetControls();
+      vm.onResetControls();
 
     }
 
     onSearchLocationWithEvent(event:Event) {
-      //console.log("Complete event data value: "+ event);
-      console.log("Control value: "+ (<HTMLInputElement>event.target).value);  
-      this.cityName = (<HTMLInputElement>event.target).value;
       this.disabledForecastButton = false;
     }
 

@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class WeatherListComponent implements OnInit {
   //@Input('city') cityName: String;
-  @Input('WeatherForecastList') weathers: any;
+  _weathers: any;
   errorMessage: string;
  // weathers: any[];
 
@@ -23,6 +23,7 @@ export class WeatherListComponent implements OnInit {
   }
 
   ngOnInit():any {
+    this._weathers = JSON.parse(sessionStorage.getItem('weather'));
 
   	//this.weathers = WEATHER_LIST;
     //this.weathers = this._weatherService.getWeatherItems();
