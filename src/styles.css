@@ -9,7 +9,8 @@ h1 {
 	text-align: center;
 }
 .weather-search {
-	text-align: center;
+    text-align: center;
+    width: 100% !important;
 }
 .weather-element {
 	width: 500px;
@@ -26,12 +27,12 @@ h1 {
 	text-align: left;
 }
 
-div {
+/* div {
     width: 320px;
     padding: 10px;
     border: 5px solid gray;
     margin: 0; 
-}
+} */
 .button {
      background-color: #4CAF50; /* Green */
     border: none;

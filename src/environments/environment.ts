@@ -7,5 +7,5 @@ export const environment = {
   production: false,
   appId: '163a85f01c3b4ef298664626181307',
   baseUrl: 'http://api.worldweatheronline.com/premium/v1/weather.ashx?', 
-  units:'&num_of_days=1&tp=1&format=json'
+  units:'&num_of_days=6&tp=1&format=json'
 };

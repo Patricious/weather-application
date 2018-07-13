@@ -1,5 +1,4 @@
 import { Injectable, Inject } from '@angular/core';
-import { WEATHER_LIST } from './weather.data';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
@@ -20,9 +19,7 @@ export class WeatherService {
 
   }
 
-  getWeatherItems(){
-    	return WEATHER_LIST;
-  } 
+  getWeatherItems(){ } 
 
   getWeatheritemsbyCity(cityName): Observable<any>{
 
