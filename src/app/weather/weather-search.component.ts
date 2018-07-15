@@ -19,7 +19,7 @@ export class WeatherSearchComponent implements OnInit {
   userSettings: any = {
     showRecentSearch: true,
     showSearchButton: false,
-    geoCountryRestriction: ['za'], //to restrict it to south affrica only, remove if you don't have to restrict
+    geoCountryRestriction: ['za'],
   };
 
     constructor(private _weatherService:WeatherService) {

@@ -15,7 +15,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { AppRoutingModule }  from './app-routing.module';
 import { MaterialModule } from './shared/modules/materialModule';
 
-// import {TranslateModule} from '@ngx-translate/core';
+
 
 @NgModule({
 

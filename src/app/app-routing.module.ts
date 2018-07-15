@@ -4,7 +4,6 @@ import { PageNotFoundComponent }  from './page-not-found.component';
 import { WeatherSearchComponent } from './weather/weather-search.component';
 
 const routes: Routes = [
-  //{ path: '', component: WeatherSearchComponent},
   { path: 'forecast', component: WeatherSearchComponent },
   { path: '', redirectTo: '/forecast', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }

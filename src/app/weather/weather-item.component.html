@@ -2,7 +2,6 @@
 <article >
     <mat-card>
     <h3>Current Condition</h3>
-
         <h4 style="text-transform: uppercase;"> {{ _weather.data.request[0].query }}</h4>
         <h4 > {{ _weather.data.current_condition[0].weatherDesc[0].value }}</h4>
         <p >Wind speed (meter/sec): {{ _weather.data.current_condition[0].windspeedKmph }}</p>
