@@ -11,18 +11,18 @@
                               <h4 style="text-transform: uppercase;"> {{ weatherForecastDataUser.data.request[0].query }}</h4>
                               <mat-card>
                               <h4 > {{ weatherForecastDataUser.data.current_condition[0].weatherDesc[0].value }}</h4>
-                              <span class="col-6" >Wind speed (meter/sec): {{ weatherForecastDataUser.data.current_condition[0].windspeedKmph }}</span>
-                              <span class="col-6 temperature">Temperature (celsius): {{ weatherForecastDataUser.data.current_condition[0].temp_C }} </span>
-                              <span class="col-6 temperature">Feels like Temperature (celsius): {{ weatherForecastDataUser.data.current_condition[0].FeelsLikeC }}</span>
-                              <span class="col-6">Cloud Cover: {{ weatherForecastDataUser.data.current_condition[0].cloudcover }}</span>
-                              <span class="col-6">Humidity (meter/sec): {{ weatherForecastDataUser.data.current_condition[0].humidity }}</span>
-                              <span class="col-6">Observation time: {{ weatherForecastDataUser.data.current_condition[0].observation_time }}</span>
-                              <span class="col-6">Pressure: {{ weatherForecastDataUser.data.current_condition[0].pressure }}</span>
-                              <span class="col-6">Wind speed Miles: {{ weatherForecastDataUser.data.current_condition[0].windspeedMiles }}</span>
-                              <span > <img [src]="weatherForecastDataUser.data.current_condition[0].weatherIconUrl[0].value"/></span>
+                              <span class="col-sm-3" >Wind speed (meter/sec): {{ weatherForecastDataUser.data.current_condition[0].windspeedKmph }}</span>
+                              <span class="col-sm-3 temperature">Temperature (celsius): {{ weatherForecastDataUser.data.current_condition[0].temp_C }} </span>
+                              <span class="col-sm-3 temperature">Feels like Temperature (celsius): {{ weatherForecastDataUser.data.current_condition[0].FeelsLikeC }}</span>
+                              <span class="col-sm-3">Cloud Cover: {{ weatherForecastDataUser.data.current_condition[0].cloudcover }}</span>
+                              <span class="col-sm-3">Humidity (meter/sec): {{ weatherForecastDataUser.data.current_condition[0].humidity }}</span>
+                              <span class="col-sm-3">Observation time: {{ weatherForecastDataUser.data.current_condition[0].observation_time }}</span>
+                              <span class="col-sm-3">Pressure: {{ weatherForecastDataUser.data.current_condition[0].pressure }}</span>
+                              <span class="col-sm-3">Wind speed Miles: {{ weatherForecastDataUser.data.current_condition[0].windspeedMiles }}</span>
+                              <span class="col-3"> <img [src]="weatherForecastDataUser.data.current_condition[0].weatherIconUrl[0].value"/></span>
                               </mat-card>
                           </div>
-                  </article>         
+                  </article>
                   <article *ngIf="weatherForecastDataUser !== undefined && weatherForecastDataUser.data !== undefined">
                           <h3>Weather Forecast for the next 5 days</h3>
                           <h4 style="text-transform: uppercase;"> {{ weatherForecastDataUser.data.request[0].query }}</h4>
@@ -30,44 +30,44 @@
                               <mat-card>
                                       <mat-card-title><h3>Astronomy</h3></mat-card-title>
                                       <mat-card-subtitle>
-                                              <span class="col-4">Date : {{weather.date}}</span>
-                                              <span class="col-4 temperature">Max Temperature (celsius): {{ weather.maxtempC }} </span>
-                                              <span class="col-4 temperature">Min Temperature (celsius): {{ weather.mintempC }} </span>
+                                              <span class="col-xs-3">Date : {{weather.date}}</span>
+                                              <span class="col-xs-3 temperature">Max Temperature (celsius): {{ weather.maxtempC }} </span>
+                                              <span class="col-xs-3 temperature">Min Temperature (celsius): {{ weather.mintempC }} </span>
                                       </mat-card-subtitle>
                                       <mat-card-content>
-                                          <span class="col-2">sunrise : {{weather.astronomy[0].sunrise}}</span>
-                                          <span class="col-2">sunset : {{weather.astronomy[0].sunset}}</span>
-                                          <span class="col-2">moonrise : {{weather.astronomy[0].moonrise}}</span>
-                                          <span class="col-2">moonset : {{weather.astronomy[0].moonset}}</span>
-                                          <span class="col-2">moon phase : {{weather.astronomy[0].moon_phase}}</span>
+                                          <span class="col-xs-3">sunrise : {{weather.astronomy[0].sunrise}}</span>
+                                          <span class="col-xs-3">sunset : {{weather.astronomy[0].sunset}}</span>
+                                          <span class="col-xs-3">moonrise : {{weather.astronomy[0].moonrise}}</span>
+                                          <span class="col-xs-3">moonset : {{weather.astronomy[0].moonset}}</span>
+                                          <span class="col-xs-12">moon phase : {{weather.astronomy[0].moon_phase}}</span>
                                       </mat-card-content>
                                       <mat-card-footer>
                                               <mat-tab-group>
                                                       <mat-tab *ngFor="let hour of weather.hourly">
-                                                              <ng-template mat-tab-label>
+                                                              <ng-template class="col-12" mat-tab-label>
                                                                       <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
                                                                       {{hour.time}} Hour
                                                               </ng-template>
-                                                              <h3 > {{ hour.weatherDesc[0].value }}</h3>
-                                                              <span class="col-6" >Wind speed (meter/sec): {{ hour.windspeedKmph }}</span>
-                                                              <span class="col-6 temperature">Temperature (celsius): {{ hour.temp_C }} </span>
-                                                              <span class="col-6 temperature">Feels like Temperature (celsius): {{ hour.FeelsLikeC }}</span>
-                                                              <span class="col-6" >Cloud Cover: {{ hour.cloudcover }}</span>
-                                                              <span class="col-6" >Humidity (meter/sec): {{ hour.humidity }}</span>
-                                                              <span class="col-6">Observation time: {{ hour.observation_time }}</span>
-                                                              <span class="col-6">Pressure: {{ hour.pressure }}</span>
-                                                              <span class="col-6">Wind speed Miles: {{ hour.windspeedMiles }}</span>
-                                                              <span class="col-6" >chance of rain: {{ hour.chanceofrain }}</span>
-                                                              <span class="col-6">chance of remdry: {{ hour.chanceofremdry }}</span>
-                                                              <span class="col-6">chance of windy: {{ hour.chanceofwindy }}</span>
-                                                              <span class="col-6">chance of overcast: {{ hour.chanceofovercast }}</span>
-                                                              <span class="col-6">chance of sunshine: {{ hour.chanceofsunshine }}</span>
-                                                              <span class="col-6">chance of frost: {{ hour.chanceoffrost }}</span>
-                                                              <span class="col-6">chance of hightemp: {{ hour.chanceofhightemp }}</span>
-                                                              <span class="col-6">chance of fog: {{ hour.chanceoffog }}</span>
-                                                              <span class="col-6">chance of snow: {{ hour.chanceofsnow }}</span>
-                                                              <span class="col-6">chance of thunder: {{ hour.chanceofthunder }}</span>
-                                                              <span class="col-6"> <img [src]="hour.weatherIconUrl[0].value"/></span>
+                                                              <h3> {{ hour.weatherDesc[0].value }}</h3>
+                                                              <span class="col-sm-3" >Wind speed (meter/sec): {{ hour.windspeedKmph }}</span>
+                                                              <span class="col-sm-3 temperature">Temperature (celsius): {{ hour.temp_C }} </span>
+                                                              <span class="col-sm-3 temperature">Feels like Temperature (celsius): {{ hour.FeelsLikeC }}</span>
+                                                              <span class="col-sm-3" >Cloud Cover: {{ hour.cloudcover }}</span>
+                                                              <span class="col-sm-3" >Humidity (meter/sec): {{ hour.humidity }}</span>
+                                                              <span class="col-sm-3">Observation time: {{ hour.observation_time }}</span>
+                                                              <span class="col-sm-3">Pressure: {{ hour.pressure }}</span>
+                                                              <span class="col-sm-3">Wind speed Miles: {{ hour.windspeedMiles }}</span>
+                                                              <span class="col-sm-3" >chance of rain: {{ hour.chanceofrain }}</span>
+                                                              <span class="col-sm-3">chance of remdry: {{ hour.chanceofremdry }}</span>
+                                                              <span class="col-sm-3">chance of windy: {{ hour.chanceofwindy }}</span>
+                                                              <span class="col-sm-3">chance of overcast: {{ hour.chanceofovercast }}</span>
+                                                              <span class="col-sm-3">chance of sunshine: {{ hour.chanceofsunshine }}</span>
+                                                              <span class="col-sm-3">chance of frost: {{ hour.chanceoffrost }}</span>
+                                                              <span class="col-sm-3">chance of hightemp: {{ hour.chanceofhightemp }}</span>
+                                                              <span class="col-sm-3">chance of fog: {{ hour.chanceoffog }}</span>
+                                                              <span class="col-sm-3">chance of snow: {{ hour.chanceofsnow }}</span>
+                                                              <span class="col-sm-3">chance of thunder: {{ hour.chanceofthunder }}</span>
+                                                              <span class="col-12"> <img [src]="hour.weatherIconUrl[0].value"/></span>
                                                       </mat-tab>
                                               </mat-tab-group>
                                       </mat-card-footer>
@@ -96,15 +96,15 @@
                               <h4 style="text-transform: uppercase;"> {{ weatherForecastData.data.request[0].query }}</h4>
                               <mat-card>
                               <h4 > {{ weatherForecastData.data.current_condition[0].weatherDesc[0].value }}</h4>
-                              <span class="col-6" >Wind speed (meter/sec): {{ weatherForecastData.data.current_condition[0].windspeedKmph }}</span>
-                              <span class="col-6 temperature">Temperature (celsius): {{ weatherForecastData.data.current_condition[0].temp_C }} </span>
-                              <span class="col-6 temperature">Feels like Temperature (celsius): {{ weatherForecastData.data.current_condition[0].FeelsLikeC }}</span>
-                              <span class="col-6">Cloud Cover: {{ weatherForecastData.data.current_condition[0].cloudcover }}</span>
-                              <span class="col-6">Humidity (meter/sec): {{ weatherForecastData.data.current_condition[0].humidity }}</span>
-                              <span class="col-6">Observation time: {{ weatherForecastData.data.current_condition[0].observation_time }}</span>
-                              <span class="col-6">Pressure: {{ weatherForecastData.data.current_condition[0].pressure }}</span>
-                              <span class="col-6">Wind speed Miles: {{ weatherForecastData.data.current_condition[0].windspeedMiles }}</span>
-                              <span> <img [src]="weatherForecastData.data.current_condition[0].weatherIconUrl[0].value"/></span>
+                              <span class="col-sm-3" >Wind speed (meter/sec): {{ weatherForecastData.data.current_condition[0].windspeedKmph }}</span>
+                              <span class="col-sm-3 temperature">Temperature (celsius): {{ weatherForecastData.data.current_condition[0].temp_C }} </span>
+                              <span class="col-sm-3 temperature">Feels like Temperature (celsius): {{ weatherForecastData.data.current_condition[0].FeelsLikeC }}</span>
+                              <span class="col-sm-3">Cloud Cover: {{ weatherForecastData.data.current_condition[0].cloudcover }}</span>
+                              <span class="col-sm-3">Humidity (meter/sec): {{ weatherForecastData.data.current_condition[0].humidity }}</span>
+                              <span class="col-sm-3">Observation time: {{ weatherForecastData.data.current_condition[0].observation_time }}</span>
+                              <span class="col-sm-3">Pressure: {{ weatherForecastData.data.current_condition[0].pressure }}</span>
+                              <span class="col-sm-3">Wind speed Miles: {{ weatherForecastData.data.current_condition[0].windspeedMiles }}</span>
+                              <span class="col-3"> <img [src]="weatherForecastData.data.current_condition[0].weatherIconUrl[0].value"/></span>
                               </mat-card>
                           </div>
                   </article>
@@ -115,16 +115,16 @@
                               <mat-card>
                                       <mat-card-title><h3>Astronomy</h3></mat-card-title>
                                       <mat-card-subtitle>
-                                          <span class="col-4">Date : {{weather.date}}</span>
-                                          <span class="col-4">Max Temperature (celsius): {{ weather.maxtempC }} </span>
-                                          <span class="col-4">Min Temperature (celsius): {{ weather.mintempC }} </span>
+                                          <span class="col-sm-3">Date : {{weather.date}}</span>
+                                          <span class="col-sm-3">Max Temperature (celsius): {{ weather.maxtempC }} </span>
+                                          <span class="col-sm-3">Min Temperature (celsius): {{ weather.mintempC }} </span>
                                       </mat-card-subtitle>
                                       <mat-card-content>
-                                          <span class="col-6">sunrise : {{weather.astronomy[0].sunrise}}</span>
-                                          <span class="col-6">sunset : {{weather.astronomy[0].sunset}}</span>
-                                          <span class="col-6">moonrise : {{weather.astronomy[0].moonrise}}</span>
-                                          <span class="col-6">moonset : {{weather.astronomy[0].moonset}}</span>
-                                          <span class="col-6">moon phase : {{weather.astronomy[0].moon_phase}}</span>
+                                          <span class="col-sm-3">sunrise : {{weather.astronomy[0].sunrise}}</span>
+                                          <span class="col-sm-3">sunset : {{weather.astronomy[0].sunset}}</span>
+                                          <span class="col-sm-3">moonrise : {{weather.astronomy[0].moonrise}}</span>
+                                          <span class="col-sm-3">moonset : {{weather.astronomy[0].moonset}}</span>
+                                          <span class="col-sm-3">moon phase : {{weather.astronomy[0].moon_phase}}</span>
                                       </mat-card-content>
                                       <mat-card-footer>
                                               <mat-tab-group>
@@ -134,31 +134,31 @@
                                                                       {{hour.time}} Hour
                                                               </ng-template>
                                                               <h3 > {{ hour.weatherDesc[0].value }}</h3>
-                                                              <span class="col-6" >Wind speed (meter/sec): {{ hour.windspeedKmph }}</span>
-                                                              <span class="col-6 temperature">Temperature (celsius): {{ hour.temp_C }} </span>
-                                                              <span class="col-6 temperature">Feels like Temperature (celsius): {{ hour.FeelsLikeC }}</span>
-                                                              <span class="col-6">Cloud Cover: {{ hour.cloudcover }}</span>
-                                                              <span class="col-6" >Humidity (meter/sec): {{ hour.humidity }}</span>
-                                                              <span class="col-6">Observation time: {{ hour.observation_time }}</span>
-                                                              <span class="col-6">Pressure: {{ hour.pressure }}</span>
-                                                              <span class="col-6">Wind speed Miles: {{ hour.windspeedMiles }}</span>
-                                                              <span class="col-6">chance of rain: {{ hour.chanceofrain }}</span>
-                                                              <span class="col-6">chance of remdry: {{ hour.chanceofremdry }}</span>
-                                                              <span class="col-6">chance of windy: {{ hour.chanceofwindy }}</span>
-                                                              <span class="col-6">chance of overcast: {{ hour.chanceofovercast }}</span>
-                                                              <span class="col-6">chance of sunshine: {{ hour.chanceofsunshine }}</span>
-                                                              <span class="col-6">chance of frost: {{ hour.chanceoffrost }}</span>
-                                                              <span class="col-6">chance of hightemp: {{ hour.chanceofhightemp }}</span>
-                                                              <span class="col-6">chance of fog: {{ hour.chanceoffog }}</span>
-                                                              <span class="col-6">chance of snow: {{ hour.chanceofsnow }}</span>
-                                                              <span class="col-6">chance of thunder: {{ hour.chanceofthunder }}</span>
-                                                              <span > <img [src]="hour.weatherIconUrl[0].value"/></span>
+                                                              <span class="col-sm-3" >Wind speed (meter/sec): {{ hour.windspeedKmph }}</span>
+                                                              <span class="col-sm-3 temperature">Temperature (celsius): {{ hour.temp_C }} </span>
+                                                              <span class="col-sm-3 temperature">Feels like Temperature (celsius): {{ hour.FeelsLikeC }}</span>
+                                                              <span class="col-sm-3">Cloud Cover: {{ hour.cloudcover }}</span>
+                                                              <span class="col-sm-3" >Humidity (meter/sec): {{ hour.humidity }}</span>
+                                                              <span class="col-sm-3">Observation time: {{ hour.observation_time }}</span>
+                                                              <span class="col-sm-3">Pressure: {{ hour.pressure }}</span>
+                                                              <span class="col-sm-3">Wind speed Miles: {{ hour.windspeedMiles }}</span>
+                                                              <span class="col-sm-3">chance of rain: {{ hour.chanceofrain }}</span>
+                                                              <span class="col-sm-3">chance of remdry: {{ hour.chanceofremdry }}</span>
+                                                              <span class="col-sm-3">chance of windy: {{ hour.chanceofwindy }}</span>
+                                                              <span class="col-sm-3">chance of overcast: {{ hour.chanceofovercast }}</span>
+                                                              <span class="col-sm-3">chance of sunshine: {{ hour.chanceofsunshine }}</span>
+                                                              <span class="col-sm-3">chance of frost: {{ hour.chanceoffrost }}</span>
+                                                              <span class="col-sm-3">chance of hightemp: {{ hour.chanceofhightemp }}</span>
+                                                              <span class="col-sm-3">chance of fog: {{ hour.chanceoffog }}</span>
+                                                              <span class="col-sm-3">chance of snow: {{ hour.chanceofsnow }}</span>
+                                                              <span class="col-sm-3">chance of thunder: {{ hour.chanceofthunder }}</span>
+                                                              <span class="col-3"> <img [src]="hour.weatherIconUrl[0].value"/></span>
                                                       </mat-tab>
                                               </mat-tab-group>
                                       </mat-card-footer>
                               </mat-card>
                           </div>
                   </article>
-                </mat-tab> -->
+                </mat-tab>
         </mat-tab-group>
 </section>
