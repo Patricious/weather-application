@@ -1,11 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-body { 
-	background-color: navyblue;  
+body {
+    background-color: aliceblue;
+    /*background-image: url(./assets/img/images.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*!*background-attachment: fixed;*!*/
+    /*background-size: cover;*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*top: 0;*/
+    /*height: 100%;*/
+
+}
+
+img{
+    height: 100px;
 }
 
 h1 {
-	color:blue;
+	color:black;
 	text-align: center;
 }
 .weather-search {
@@ -52,3 +66,43 @@ p.uppercase {
 p.lowercase {
     text-transform: lowercase;
 }
+
+/*@keyframes animatedBackground {*/
+    /*from {*/
+        /*background-position: 0 0;*/
+    /*}*/
+    /*to {*/
+        /*background-position: 100% 0;*/
+    /*}*/
+/*}*/
+
+/*#animate-area {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+    /*background-image: url(https://davidwalsh.name/demo/bg-clouds.png);*/
+    /*background-position: 0px 0px;*/
+    /*background-repeat: repeat-x;*/
+    /*animation: animatedBackground 40s linear infinite;*/
+/*}*/
+
+
+.mat-card {
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+span {
+    width: 150px;
+    display:inline-block;
+
+}
+
+
+
+
+
+
+
+
