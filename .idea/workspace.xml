@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef131d7c-ad4d-435f-9bdf-e5c2a0a768db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/nature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/snow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/sunset.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -20,7 +24,9 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1444" />
+            <state relative-caret-position="138">
+              <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -35,7 +41,6 @@
         <option value="$PROJECT_DIR$/src/app/weather/weather-list.component.css" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/weather/weather-search.component.html" />
         <option value="$PROJECT_DIR$/src/app/weather/weather-item.component.html" />
         <option value="$PROJECT_DIR$/src/app/weather/weather.service.ts" />
@@ -47,6 +52,7 @@
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/src/styles.css" />
       </list>
     </option>
   </component>
@@ -95,6 +101,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -105,7 +124,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;t&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-material-admin-template" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -148,7 +167,7 @@
       <workItem from="1531587432735" duration="3182000" />
       <workItem from="1531652312485" duration="259000" />
       <workItem from="1531652686716" duration="1441000" />
-      <workItem from="1531655143405" duration="7196000" />
+      <workItem from="1531655143405" duration="9754000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1531504774181</created>
@@ -182,13 +201,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31524000" />
+    <option name="totallyTimeSpent" value="34082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="27" width="1230" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25934958" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25934958" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -196,7 +216,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33603895" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33603895" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -618,7 +638,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1444" />
+        <state relative-caret-position="138">
+          <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+        </state>
       </provider>
     </entry>
   </component>
