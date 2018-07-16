@@ -20,8 +20,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+            <state relative-caret-position="78">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -120,7 +120,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;t&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-material-admin-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../beyond-the-cinema" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
@@ -163,7 +163,7 @@
       <workItem from="1531587432735" duration="3182000" />
       <workItem from="1531652312485" duration="259000" />
       <workItem from="1531652686716" duration="1441000" />
-      <workItem from="1531655143405" duration="10451000" />
+      <workItem from="1531655143405" duration="10985000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1531504774181</created>
@@ -200,11 +200,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531668107612</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="styles">
+      <created>1531720948794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531720948794</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34779000" />
+    <option name="totallyTimeSpent" value="35313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="27" width="1230" height="741" extended-state="0" />
@@ -213,12 +220,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25934958" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12845528" side_tool="true" visible="true" weight="0.33441558" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296355" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33603895" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8715447" visible="true" weight="0.33441558" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -640,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+        <state relative-caret-position="78">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
