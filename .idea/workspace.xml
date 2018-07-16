@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef131d7c-ad4d-435f-9bdf-e5c2a0a768db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ef131d7c-ad4d-435f-9bdf-e5c2a0a768db" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="168">
+              <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -86,30 +84,6 @@
               <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="weather-application" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -131,6 +105,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
     </key>
   </component>
@@ -163,7 +138,7 @@
       <workItem from="1531587432735" duration="3182000" />
       <workItem from="1531652312485" duration="259000" />
       <workItem from="1531652686716" duration="1441000" />
-      <workItem from="1531655143405" duration="10985000" />
+      <workItem from="1531655143405" duration="11249000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1531504774181</created>
@@ -207,11 +182,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531720948794</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="styles">
+      <created>1531721636206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531721636206</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35313000" />
+    <option name="totallyTimeSpent" value="35577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="27" width="1230" height="741" extended-state="0" />
@@ -270,13 +252,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="styles" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/weather/weather-search.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -645,10 +620,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="168">
+          <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
         </state>
       </provider>
     </entry>
